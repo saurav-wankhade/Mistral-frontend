@@ -43,10 +43,15 @@ async function sendMessage() {
     `;
     chatBox.scrollTop = chatBox.scrollHeight;
   }
-  
+
+
   function checkEnter(event) {
     if (event.key === 'Enter') {
       sendMessage();
     }
   }
-  
+
+function clearChat() {
+  const chatBox = document.getElementById('chat');
+  chatBox.innerHTML = '';
+}
