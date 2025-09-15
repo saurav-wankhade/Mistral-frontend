@@ -50,4 +50,8 @@ async function sendMessage() {
       sendMessage();
     }
   }
+function clearChat() {
+  const chatBox = document.getElementById('chat');
+  chatBox.innerHTML = '';
+}
 
