@@ -52,6 +52,10 @@ async function sendMessage() {
   }
 function clearChat() {
   const chatBox = document.getElementById('chat');
-  chatBox.innerHTML = '';
+  chatBox.innerHTML = ''; // Clear messages
+
+  // Optional: clear the input box too
+  const msgInput = document.getElementById('message');
+  msgInput.value = '';
 }
 
