@@ -1,34 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mistral Chatbot</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="chat-container">
-    <!-- Header -->
-    <header class="chat-header">
-      <h2>🤖 Mistral Chatbot</h2>
-      <span class="info">Knowledge up to October 2023</span>
-    </header>
-
-    <!-- Chat messages -->
-    <div class="chat-box" id="chat"></div>
-
-    <!-- Input area -->
-    <footer class="input-area">
-      <input type="text" id="message" placeholder="Ask me anything..." onkeydown="checkEnter(event)">
-      <button onclick="sendMessage()">Send</button>
-    </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
-<footer class="input-area">
-  <input type="text" id="message" placeholder="Ask me anything..." onkeydown="checkEnter(event)">
-  <button onclick="sendMessage()">Send</button>
-  <button onclick="clearChat()" class="clear-btn">Clear Chat</button>
-</footer>
-
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistral Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Header -->
+      <header class="chat-header">
+        <h2>🤖 Mistral Chatbot</h2>
+        <span class="info">Knowledge up to October 2023</span>
+      </header>
+  
+      <!-- Chat messages -->
+      <div class="chat-box" id="chat"></div>
+  
+      <!-- Input area -->
+      <footer class="input-area">
+        <input type="text" id="message" placeholder="Ask me anything..." onkeydown="checkEnter(event)">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="clearChat()" class="clear-btn">Clear Chat</button>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
