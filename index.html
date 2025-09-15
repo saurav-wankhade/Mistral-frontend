@@ -8,12 +8,20 @@
 </head>
 <body>
   <div class="chat-container">
-    <h2>Mistral Chatbot</h2>
+    <!-- Header -->
+    <header class="chat-header">
+      <h2>🤖 Mistral Chatbot</h2>
+      <span class="info">Knowledge up to 2021</span>
+    </header>
+
+    <!-- Chat messages -->
     <div class="chat-box" id="chat"></div>
-    <div class="input-area">
-      <input type="text" id="message" placeholder="Type your message..." onkeydown="checkEnter(event)">
+
+    <!-- Input area -->
+    <footer class="input-area">
+      <input type="text" id="message" placeholder="Ask me anything..." onkeydown="checkEnter(event)">
       <button onclick="sendMessage()">Send</button>
-    </div>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
